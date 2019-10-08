@@ -41,3 +41,6 @@
                 echo "<h3 style='text-align:center;'>No tenemos una traduccion conocida para ese idioma, perdona las molestias. </h3>";
                 break;
         }
+    ?>
+</body>
+</html>
