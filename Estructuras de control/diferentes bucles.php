@@ -71,7 +71,14 @@
             }
         }
 
-        // Ejercicio 5: DOBLE bucle FOR de 
+        // Ejercicio 5: DOBLE bucle FOR de 01 a 44 //
+        echo "<h3 style='color:red; text-align:center'> DOUBLE Bucle For From 01 to 41 ONLY pair numbers </h3>";
+
+        for($i = 0; $i < 4; $i++){
+            for($j = 1; $j < 5; $j++){
+                echo"$i,$j <br/>";
+            }
+        }
 
     ?>
 </body>
