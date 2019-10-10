@@ -16,11 +16,11 @@
 
         // Ejercicio 1: Bucle While de 0 a 100 //
         echo "<h3 style='color:red; text-align:center'> Bucle While From 0 to 100 </h3>";
-        
+
         $contador = 0;
         while ($contador <= 100){
             echo "$contador";
-            if($contador !== 100){
+            if($contador != 100){
                 echo ",";
             }
             $contador++;
@@ -28,13 +28,13 @@
         echo "<br/>";
 
         // Ejercicio 2: Bucle Do_While de 100 a 0, mostrar SOLO PARES (0 incluido) //      
-        echo "<h3 style='color:red; text-align:center'> Bucle Do-While From 100 to 0 ONLY pairs numbers </h3>";
+        echo "<h3 style='color:red; text-align:center'> Bucle Do-While From 100 to 0 ONLY pair numbers </h3>";
 
         $contador_inv = 100;
         do{
             if($contador_inv % 2 == 0){
                 echo "$contador_inv";
-                if($contador_inv !== 0){
+                if($contador_inv != 0){
                     echo ",";
                 }
             }
@@ -49,14 +49,29 @@
 
         $contador_once = 11;
         while($contador_once > 0){
-            if($contador_once % 2 !== 0){
+            if($contador_once % 2 != 0){
                 echo "$contador_once";
-                if($contador_once !== 1){
+                if($contador_once != 1){
                     echo ",";
                 }
             }
             $contador_once--;
         }
+
+        // Ejercicio 4: Bucle FOR de 100 a 1, mostrar SOLO PARES //
+        echo "<h3 style='color:red; text-align:center'> Bucle For From 100 to 1 ONLY pair numbers </h3>";
+        
+
+        for($contador_for = 100; $contador_for > 0; $contador_for--){
+            if($contador_for % 2 == 0){
+                echo "$contador_for";
+                if($contador_for !== 2){
+                    echo ",";
+                }
+            }
+        }
+
+        // Ejercicio 5: DOBLE bucle FOR de 
 
     ?>
 </body>
