@@ -58,7 +58,7 @@
                                 1,2
                                 1
         */
-        echo "<h3 style='color:red; text-align:center'> Bucle Do-While From 11 to 0 ONLY odd numbers </h3>";
+        echo "<h3 style='color:red; text-align:center'> Exercise 3 </h3>";
 
         for($i = 5; $i >= 1; $i--){
             echo "[ ";
@@ -70,6 +70,20 @@
             }
             echo " ] <br/>";
         }
+
+        // Ejercicio 4: Mismo que ejercicio 3, pero hasta cualquier numero //
+        
+        for($i = 15; $i >= 1; $i--){
+            echo "[ ";
+            for($j = 1; $j <= $i; $j++){
+                echo "$j";
+                if($j != $i){
+                    echo ",";
+                }
+            }
+            echo " ] <br/>";
+        }
+        
     ?>
 </body>
 </html>
