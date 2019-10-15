@@ -71,6 +71,9 @@
             echo " ] <br/>";
         }
 
+        // Lineas En blanco
+        echo "<br/><br/><br/>";
+
         // Ejercicio 4: Mismo que ejercicio 3, pero hasta cualquier numero //
         
         for($i = 15; $i >= 1; $i--){
