@@ -93,19 +93,25 @@
 
             //Variables
             $array_A = array(7,5,2,4,8,6,9,0,1,3);
-            $array_B = array(0,0,0,0,0,0,0,0,0,0);
             $longitudTres = count($array_A); //Añado la longitud por si alguna vez tengo que aumentar o disminuir su tamaño.
-            $posicionMax = 0;
+            $posicionMax = -100;
 
+            //Creacion de un array de longitud "LongitudTres"
             for($i=0; $i < $longitudTres; $i++){
-                $var_max = 0;
+                $array_B[$i]=0;
+            }
+
+
+            //Ordenacion del Vector de Mayor a Menor
+            for($i=0; $i < $longitudTres; $i++){
+                $var_max = -100;
                 for($j=0;$j < $longitudTres;$j++){
                     if($array_A[$j] > $var_max){
                         $var_max = $array_A[$j];
                         $posicionMax = $j;
                     }
                 }
-                $array_A[$posicionMax] = 0;
+                $array_A[$posicionMax] = -100;
                 $array_B[$i] = $var_max;
             }
 
@@ -125,19 +131,23 @@
 
             //Variables
             $array_C = array(7,5,2,4,8,6,9,0,1,3);
-            $array_D = array(0,0,0,0,0,0,0,0,0,0);
             $longitudCuatro = count($array_C); //Añado la longitud por si alguna vez tengo que aumentar o disminuir su tamaño.
-            $posicionMin = 9;
+            $posicionMin = 999;
+
+            //Creacion de un array de longitud "LongitudTres"
+            for($i=0; $i < $longitudCuatro; $i++){
+                $array_D[$i]=0;
+            }
 
             for($i=0; $i < $longitudCuatro; $i++){
-                $var_min = 9;
+                $var_min = 999;
                 for($j=0;$j < $longitudCuatro;$j++){
                     if($array_C[$j] < $var_min){
                         $var_min = $array_C[$j];
                         $posicionMin = $j;
                     }
                 }
-                $array_C[$posicionMin] = 9;
+                $array_C[$posicionMin] = 999;
                 $array_D[$i] = $var_min;
             }
 
