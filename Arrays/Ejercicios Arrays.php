@@ -24,11 +24,11 @@
     </style>
 </head>
 <body style="background-color:#d8ffd5">
-    <h1 style="color:#2e9616;text-align:center"> EXERCISE: Tons of Exercises! </h1>
+    <h1 style="color:#2e9616;text-align:center"> EXERCISE: Funtions in Arrays </h1>
     <h1 style="color:#FF6C00;text-align:center"> By Jorge Ortega 2019/20 </h1>
     <?php
         echo "<div>";
-        echo "<h3>Exercise 1: Find the highest number in a array of numbers! </h3>";
+        echo "<h3>Exercise 1: Find the HIGHEST number in a array of numbers! </h3>";
 
             //Variables
             $arrayUno = array(7,5,2,4,8,6,9,0,1,3);
@@ -58,7 +58,7 @@
             //Lineas vacias
             echo "<br/><br/>";
 
-        echo "<h3>Exercise 2: Find the lowest number in a array of numbers! </h3>";
+        echo "<h3>Exercise 2: Find the LOWEST number in a array of numbers! </h3>";
 
             //Variables
             $arrayDos = array(7,5,2,4,8,6,9,0,1,3);
@@ -89,7 +89,7 @@
             echo "<br/><br/>";
 
 
-        echo "<h3>Exercise 3: Put numbers in the correct up order! </h3>"; 
+        echo "<h3>Exercise 3: Put numbers in the correct UP order! </h3>"; 
 
             //Variables
             $array_A = array(7,5,2,4,8,6,9,0,1,3);
@@ -126,7 +126,7 @@
             echo "<br/><br/>";
 
 
-        echo "<h3>Exercise 4: Put numbers in the correct down order! </h3>"; 
+        echo "<h3>Exercise 4: Put numbers in the correct DOWN order! </h3>"; 
         
 
             //Variables
