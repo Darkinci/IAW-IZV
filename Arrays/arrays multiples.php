@@ -89,6 +89,8 @@
                                         
             );
 
+            
+            echo "<h3>Text Arrays!</h3>";
             //Ahora lo sacamos por pantalla
             foreach($colores as $indUno => $valor){
                 if(is_array($valor)){
@@ -101,7 +103,7 @@
             //Lineas vacias
             echo "<br/><br/>";
 
-
+            echo "<h3>Colour Arrays!</h3>";
             //Ahora vamos a intentar crear una tabla poner los fondos de los tds de diferentes colores
             echo "<table>";
             foreach($colores as $indUno => $valor){
