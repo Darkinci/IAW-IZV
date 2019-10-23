@@ -1,0 +1,86 @@
+1. Creamos un numero impar entre 3 y 27.
+
+    do{
+        $longitud = mt_rand(3,27);
+    }while($longitud % 2 == 0);
+
+2. Creamos un array de longitud impar con el numero sacado antes
+y con valores aleatorios comprendidos entre el 0,200
+
+    for($i=0;$i<$longitud;$i++){
+        $array_A[$i] = mt_rand(0,200);
+    }
+
+3. Calculamos la posicion media del array y lo convertimos a int
+para que pierda el decimal que no nos interesa
+
+    $posicion_media = $longitud / 2;
+    settype($posicion_media, "int");
+
+4. Guardamos el valor que hay en posicion_media, ya que lo
+utilizaremos mas tarde para hacer comprobaciones.
+
+    $valor_medio = $array_A[$posicion_media];
+
+5. Creamos un nuevo array (B) que tendrá la misma distancia que
+A, y ponemos en la posicion_media, el valor_medio, lo demás, lo
+podemos rellenar con *, simplemente visual
+
+    for($i=0;$i < $longitud;$i++){
+        if($i == $posicion_media){
+            $array_B[$i] = $valor_medio;
+        }else $array_B[$i] = "*";
+    }
+
+6. -- OPCIONAL -- Podemos sacar los arrays por pantalla (A y B) 
+para ver como están actualmente. Podemos ponerle estilos para
+que sea visualmente más bonito.
+
+    for($i=0;$i<$longitud;$i++){
+        if($i==$posicion_media){
+            BACKGROUND DE COLOR VERDE
+        }else if ($i%2==0){
+            BACKGROUND DE COLOR AZUL
+        }else BACKGROUND DE COLOR ROJO
+    }
+
+7. -- IMPORTANTE -- Tenemos que tratar al vector B como si se
+tratase de 3 piezas:
+    -Vector a la Izquierda
+    -Valor que comprueba
+    -Vector a la derecha
+
+    Ejemplo, si tuviesemos un vector de tamaño 7, las 3 piezas
+        deberian ser así.
+
+                [*][*][*]----[n]----[*][*][*]
+
+La tarea que tenemos que hacer son las siguientes:
+
+    1. Comprobar el numero con nuestro valor_medio
+    2. Colocar ese valor a la izquierda o derecha de este segun
+        sea menor o igual/mayor
+    3. Comprobar si queda hueco en ese vector que hemos creado
+    4. Comprobar el sitio por donde voy para poner el 
+        siguiente valor
+    5. NO COMPROBAR el valor central == SALTARSELO
+
+
+8. Ahora, todo parece demasiado complicado, pero:
+     "¡DIVIDE Y VENCERAS!"
+Asi que vamos tarea a tarea.
+
+    Tarea 1: Comprobar cualquier numero con nuestro valor_medio
+
+    if($valor_cualquiera < $valor_medio){
+        Aqui es menor, asi que lo "ponemos" a la izquierda
+        (no lo ponemos directamente, ha pasado el 1º filtro
+            ahora le quedan minimo 1 mas)
+    }else{
+        (Significa que es mayor, por lo tanto, se va a la 
+            DERECHA y tiene que pasar otro filtro más)
+    } 
+
+    Tarea 2: Colocar un numero a la izq o derecha
+
+        
