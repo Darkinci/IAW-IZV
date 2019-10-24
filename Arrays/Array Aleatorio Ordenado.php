@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" type="image" href="D:\2º ASIR A\IAW - Ruth Galera\Clase\Icono\ico.png" />
-    <title> Arrays Exercises! </title>
+    <title> Random Ordered Array! </title>
     <style>
             table,tr,td {
                 margin: 0 auto;
@@ -28,36 +28,36 @@
     </style>
 </head>
 <body style="background-color:#d8ffd5">
-    <h1 style="color:#2e9616;text-align:center"> EXERCISE: Mandatory Array Exercise </h1>
+    <h1 style="color:#2e9616;text-align:center"> EXERCISE: Mandatory Random Array Exercise </h1>
     <h1 style="color:#FF6C00;text-align:center"> By Jorge Ortega 2019/20 </h1>
     <?php
         echo "<div>";
         echo "<h3>Exercise 1: Sort the RANDOM array from LOWEST TO HIGHEST! </h3>";
-
-        //Creación del array!
+ 
+        //Creación de la longitud del array! (Tiene que ser un numero IMPAR)
         do{
-        $longitud = mt_rand(3,27);
+            $longitud = mt_rand(3,27);
         }while($longitud % 2 == 0);
 
-        //Creamos el array con longitud aleatoria entre 3 - 99
+        //Creamos el array A con valores aleatorios entre 0 y 20
         for($i=0; $i < $longitud; $i++){
             $array_A[$i] = mt_rand(0,20);
         }
 
-        $posicion_media = ($longitud / 2);
+        //guardamos la posicion media del array creado ya que nos será de utilidad en el futuro
+        $posicion_media = $longitud / 2;
+        //Convertimos posicion_media en int, ya que puede ser que tenga decimales, y no nos interesa eso
+        settype($posicion_media,"int");
 
-        //mi error es que cuando intento sacar la posicion media (dividir entre 2), hay veces que me da error
-        settype ($posicion_media, "int");
+        //Guardamos el valor que haya en la posicion_media, ya que sera nuestro VALOR ESPECIAL
         $valor_medio = $array_A[$posicion_media];
 
-        //Información del ejercicio paso a paso
-        echo "<h4> 1º paso, creamos un vector con valores aleatorios </h4>";
-
-        //Sacamos el array por pantalla para verlo!
+        
+        // ---------------- SACAMOS EL ARRAY A POR PANTALLA ------------------
         echo "<table><caption>Longitud: $longitud</caption><tr>";
         for($i=0; $i < $longitud;$i++){
             if($i == $posicion_media){
-                //Sacamos el valor medio de nuestro vector
+                //Sacamos el valor medio de nuestro vector de forma diferente para que sea mas visibile
                 echo "<td style='background-color:green;color:black'>$array_A[$i]</td>";
             }else if (($i % 2) == 0){
                         echo "<td>$array_A[$i] </td>";
@@ -65,7 +65,7 @@
         }
         echo "</tr></table>";
 
-        //Creacion del vector B
+        //Creamos el vector B, al inicio solo estará compuesto por Valor_medio y "*"
         for($i=0; $i < $longitud; $i++){
             if($i == $posicion_media){
                 $array_B[$i] = $valor_medio;
@@ -74,12 +74,10 @@
                 }
         }
 
-        //Lineas vacias
+        //------------------ LINEAS VACIAS ------------------------
         echo "<br/><br/><br/>";
 
-        //Informacion del ejercicio paso a paso
-        echo "<h4> 2º paso, creamos un nuevo vector donde volcaremos los nuevos valores </h4>";
-        //Sacamos el vector B por pantalla para verlo
+        // ---------------- SACAMOS EL ARRAY A POR PANTALLA ------------------
         echo "<table><tr>";
         for($i=0; $i < $longitud;$i++){
             if($i == $posicion_media){
@@ -89,23 +87,24 @@
         }
         echo "</tr></table>";
 
-        //Lineas vacias
-        echo "<br/><br/><br/>";
 
-        //Informacion del ejercicio paso a paso
-        //Vamos ordenando los valores para que quede a nuestro gusto </h4>";
-        
-        //Estos seran nuestros "Punteros" especiales, que nos diran por donde vamos en los arrays medios
-        $pos_act_izq = 0;
-                                    //AVISO ERROR!!
-        $cont_izq = ($longitud - 1)/2;
+        // ----------------------- PARTE IMPORTANTE DEL EJERCICIO -------------
 
-                                    //AVISO ERROR!!
-        $cont_dch = ($longitud - 1)/2;
+        /* Vamos a "partir" el vector A en 3
+            1. Array Izq Minimizado
+            2. Valor Central de Comprobacion
+            3. Array Dch Minimizado
+        */
 
-        $pos_act_dch = $posicion_media + 1;
+        //Esto es como un "puntero" muy light para saber por donde vamos.
+        $pos_act_izq = 0; 
+        $pos_act_dch=$posicion_media+1;
 
-        //Creamos el bucle de asignacion de valores
+        //Contadores decrecientes para saber cuantos huecos libres me quedan en los arrays minimizados
+        $cont_izq = ($longitud -1)/2; //La longitud sera la mitad del total, menos 1 (el comprobador)
+        $cont_dch = ($longitud -1)/2;
+
+        //Creamos el bucle de asignación de valores
         for($i=0;$i<$longitud;$i++){
             if($i !== $posicion_media){
                 // si el indice actual de B y el indice especial son diferentes, entonces entraremos
@@ -122,8 +121,8 @@
             }
         }
 
-        //Informacion del ejercicio paso a paso
-        echo "<h4> 3º paso, por arte de magia, ya todo funciona! :) </h4>";
+        //------------------ LINEAS VACIAS ------------------------
+        echo "<br/><br/><br/>";
 
         //Sacamos por pantalla nuestro nuevo vector ya ordenado 
         echo "<table><tr>";
