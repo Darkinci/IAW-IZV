@@ -1,4 +1,6 @@
 <?php
+
+//Funcion que muestra el resultado de sumar y multiplicar 3 valores
 function mostrar_resul($num1,$num2,$num3){
     $suma = $num1 + $num2 + $num3;
     $multiplicacion = $num1 * $num2 * $num3;
@@ -7,6 +9,7 @@ function mostrar_resul($num1,$num2,$num3){
     echo "El resultado de multiplicar $num1, $num2 y $num3 es -> $multiplicacion<br/>";
 }
 
+//Funcion que intercambia por valor
 function intercambia($s, $t){
     $cajon = $s;
     $s = $t;
@@ -15,8 +18,25 @@ function intercambia($s, $t){
     echo "Ahora, la variable \$e tiene el valor $s y la variable \$e tiene el valor $t<br/>";
 }
 
-//para pasar la posicion por referencia, hacemos &$s , &$t
+//Funcion que intercambia por referencia
+function intercambia_ref(&$e,&$d){
+    $cajon = $e;
+    $e = $d;
+    $d = $cajon;
 
+    echo "Ahora, la variable \$e tiene el valor $e y la variable \$e tiene el valor $d<br/>";
+}
+
+
+
+//Funcion que crea arrays por referencia
+function crea_array(&$a ,$longitud){
+    for($i=0;$i <$longitud;$i++){
+        $a[] = mt_rand(-100,100);
+    }
+}
+
+//Funcion que muestra el array de longitud variable y de tamaño 1dimensional o 2dimensional
 function muestra_array($array){
 
     foreach($array as $indUno => $valor){
@@ -28,13 +48,7 @@ function muestra_array($array){
     }  
 }
 
-function crea_array($longitud){
-    for($i=0;$i <$longitud;$i++){
-        $array[$i] = mt_rand(-100,100);
-    }
-    return $array;
-}
-
+//Funcion que multiplica los valores del array y lo muestra por pantalla
 function multiplica_array($array){
         $total = 1;
     foreach($array as $indice => $valor){
@@ -44,6 +58,8 @@ function multiplica_array($array){
     return $total;
 }
 
+
+//Funcion que hace el factorial
 function factorial ($numero){
 
     $almacen = $numero;
@@ -59,7 +75,5 @@ function factorial ($numero){
     }
 
 }
-
-funcion 
 
 ?>
