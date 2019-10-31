@@ -73,7 +73,21 @@ function factorial ($numero){
         }
         echo "El factorial de $almacen es $total <br/> ";
     }
+}
 
+//Funcion de fibonacci
+
+function fibonnacci ($longitud){
+    
+    if($longitud > 2){
+        return fibonacci($longitud -1) + fibonnacci($longitud-2);
+    }elseif($longitud == 2){
+            return 1;
+        }elseif($longitud == 1){
+                return 1;
+            }elseif($longitud == 0){
+                    return 0;
+                }
 }
 
 ?>

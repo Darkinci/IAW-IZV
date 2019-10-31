@@ -9,7 +9,7 @@
 
 
     $d = 3;
-    $e=4;
+    $e = 4;
 
     echo "2. Funcion intercambia valores usando d y e<br/>";
     intercambia($d,$e);
@@ -39,4 +39,10 @@
     echo "5. Funcion factorial array longitud $longitud<br/>";
     factorial($numero);
     echo "<br/><br/>";
+
+    echo "6. Funcion fibonacci<br/>";
+    for($i=$longitud;$i > 0; $i--){
+        $valor = fibonnacci($i);
+        echo "$valor ";
+    }
 ?>
