@@ -41,8 +41,9 @@
     echo "<br/><br/>";
 
     echo "6. Funcion fibonacci<br/>";
-    for($i=$longitud;$i > 0; $i--){
-        $valor = fibonnacci($i);
-        echo "$valor ";
-    }
+    fibonnacci(15);
+    echo "<br/><br/>";
+
+  
+
 ?>

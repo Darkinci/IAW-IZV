@@ -77,17 +77,20 @@ function factorial ($numero){
 
 //Funcion de fibonacci
 
-function fibonnacci ($longitud){
+function fibonnacci($longitud){
     
-    if($longitud > 2){
-        return fibonacci($longitud -1) + fibonnacci($longitud-2);
-    }elseif($longitud == 2){
-            return 1;
-        }elseif($longitud == 1){
-                return 1;
-            }elseif($longitud == 0){
-                    return 0;
-                }
-}
+    $fibonacci = array();
+    $fibonacci[0] = 0;
+    $fibonacci[1] = 1;
+ 
+    for ($i = 2; $i < $longitud; $i++) {
+        $fibonacci[$i] = $fibonacci[$i - 1] + $fibonacci[$i - 2];
+    }
+ 
+    echo "Los valores de Fibonnaci de longitud $longitud <br/>";
+    for($i=0; $i <$longitud;$i++){
+        echo "$fibonacci[$i] ";
+    }
 
+}
 ?>

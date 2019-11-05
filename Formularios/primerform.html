@@ -1,0 +1,18 @@
+<html>
+        <head>
+            <title> Primer Formulario</title>
+        </head>
+        <body style="background-color:lightseagreen;">
+            <form action="formularios_uno.php" method="post">
+                Name: <input type="text" name="nombre" placeholder="George"/>
+                <fieldset> <legend> Gender</legend>
+                    <input type="radio" name="genero" value="Hombre" /> Male
+                    <input type="radio" name="genero" value="Mujer" /> Female
+                    <input type="radio" name="genero" value="Tanque" /> War Tank
+                    <!-- Esto es un boton donde elegimos el valor (hombre - mujer) !-->
+                </fieldset>
+                Age: <input type="number" name="edad" placeholder="20" value="20" min="10" max="99"/>
+                Address <textarea name="direccion" rows="2" cols="5">
+            </form>
+        </body>
+</html>
