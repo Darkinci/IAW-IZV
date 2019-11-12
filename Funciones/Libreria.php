@@ -92,5 +92,37 @@ function fibonnacci($longitud){
         echo "$fibonacci[$i] ";
     }
 
+
+    function crea_regiones(){
+        $regiones = array ("Andalucia" => array("Granada","Malaga","Cordoba","Cadiz","Sevilla","Cadiz","Huelva","Jaen"),
+                           "Galicia" => array("Lugo","Ourense","Palencia","Ga"),
+                           "Extremadura" => array("Caceres","Badajoz"));
+        return $regiones;
+    }
+
+    function cuenta_provincias($mapa){
+        $contador = 0;
+        foreach($mapa as $valor){
+            if(is_array($valor)){
+                $contador = count($valor) + $contador;
+            }
+        }
+        
+        echo "La cantidad de provincias es $contador </br>";
+    }
+
+    /* Num aleatorio de jugadores (1-5)
+       El juego da 3 cartas (NO HAY PALOS) - num carta y el peso que tienen
+       Peso -> 2-10 vale su numero EXCEPTO AS que vale 11 (J,Q,K -> 10)
+
+       JUgador1 tiene un array de 3 cartas [][][]
+
+       ---- PROGRAMA PRINCIPAL ----
+       1. Elegimos el numero de jugadores (elige_num_jugadores());
+       2. Repartimos las cartas (rellenamos los arrays de los jugadores) (repartir_cartas());
+       3. Contamos los puntos de cada jugador (cuenta_puntos());
+       4. Elegimos el ganador (elige_ganador());
+    */
+
 }
 ?>

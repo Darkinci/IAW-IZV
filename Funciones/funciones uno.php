@@ -44,6 +44,13 @@
     fibonnacci(15);
     echo "<br/><br/>";
 
-  
+    echo "7. Funcion regiones<br/>";
+    $array=crea_regiones();
+    muestra_array($array);
+    echo "<br/><br/>";
+
+    echo "8. Funcion Cuenta provincias<br/>";
+    cuenta_provincias($array);
+    echo "<br/><br/>";
 
 ?>
