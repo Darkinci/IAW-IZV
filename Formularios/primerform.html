@@ -3,16 +3,24 @@
             <title> Primer Formulario</title>
         </head>
         <body style="background-color:lightseagreen;">
-            <form action="formularios_uno.php" method="post">
-                Name: <input type="text" name="nombre" placeholder="George"/>
-                <fieldset> <legend> Gender</legend>
-                    <input type="radio" name="genero" value="Hombre" /> Male
-                    <input type="radio" name="genero" value="Mujer" /> Female
-                    <input type="radio" name="genero" value="Tanque" /> War Tank
-                    <!-- Esto es un boton donde elegimos el valor (hombre - mujer) !-->
-                </fieldset>
-                Age: <input type="number" name="edad" placeholder="20" value="20" min="10" max="99"/>
-                Address <textarea name="direccion" rows="2" cols="5">
-            </form>
+            <table border="1px" align="center" cellpadding="15">
+                <tr><th><h2>Formulario Sencillo!</h2></th></tr>
+                <tr><td>
+                <form action="formularios_uno.php" method="post">
+                    Name: <input type="text" name="nombre" placeholder="George" value="Nombre Por Defecto"/><br/>
+                    Apellidos: <input type="text" name="apellido" placeholder="Ortheja Abuelo" value="Apellido Por Defecto"/><br/>
+                    Email: <input type="text" name="email" placeholder="example@mail.com" value="Email Por Defecto"/><br/>
+                    <!-- <fieldset> !-->
+                        <legend> Gender</legend>
+                        <input type="radio" name="genero" value="Hombre" /> Male
+                        <input type="radio" name="genero" value="Mujer" /> Female
+                        <input type="radio" name="genero" value="Tanque" /> War Tank <br/>
+                        <!-- Esto es un boton donde elegimos el valor (hombre - mujer) !-->
+                    <!--</fieldset> !-->
+                    Age: <input type="number" name="edad" placeholder="20" value="20" min="10" max="99"/>
+                    <!--Address <textarea name="direccion" rows="5" cols="20">!-->
+                </form>
+                </tr></td>
+            </table>
         </body>
 </html>

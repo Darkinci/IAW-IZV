@@ -30,7 +30,7 @@
             }
             if(isset($nuevo_productos)){
                 $productos = $nuevo_productos;
-            }
+            }  
         }
     }
 
