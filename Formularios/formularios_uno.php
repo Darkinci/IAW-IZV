@@ -12,6 +12,23 @@
     <h1 style="color:#FF6C00;text-align:center"> By Jorge Ortega 2019/20 </h1>
     <?php
         echo "<h2> Formularios Uno - Respuestas del Cliente! </h2>";
+        echo $_POST['nombre']; echo "<br/><br/>";
+        echo $_POST['apellido']; echo "<br/><br/>";
+        echo $_POST['email']; echo "<br/><br/>";
+        $estadocivil = $_POST['estadocivil'];
+        foreach ($estadocivil as $indice => $valor){
+            echo "$indice: $valor <br/>";
+        }
+        echo $_POST['genero']; echo "<br/><br/>";
+        echo $_POST['edad']; echo "<br/><br/>";
+        $NumHijos =$_POST['NumHijos'];
+        foreach ($NumHijos as $indice => $valor) {
+            echo "$indice: $valor <br/>";
+        }
+        $gustos = $_POST['gustos'];
+        foreach ($gustos as $indice => $valor) {
+            echo "$indice: $valor <br/>";
+        }
 
 
 

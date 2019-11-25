@@ -7,20 +7,43 @@
                 <tr><th><h2>Formulario Sencillo!</h2></th></tr>
                 <tr><td>
                 <form action="formularios_uno.php" method="post">
-                    Name: <input type="text" name="nombre" placeholder="George" value="Nombre Por Defecto"/><br/>
-                    Apellidos: <input type="text" name="apellido" placeholder="Ortheja Abuelo" value="Apellido Por Defecto"/><br/>
-                    Email: <input type="text" name="email" placeholder="example@mail.com" value="Email Por Defecto"/><br/>
+                    Name: <input type="text" name="nombre" placeholder="George"/><br/><br/>
+                    Apellidos: <input type="text" name="apellido" placeholder="Ortheja Abuelo"/><br/><br/>
+                    Email: <input type="text" name="email" placeholder="example@mail.com"/><br/><br/>
+                    Estado Civil:
+                        <input list="estadocivil" name="estadocivil" placeholder="Elige uno de la lista">
+                            <datalist id="estadocivil">
+                                <option value="Soltero/a">
+                                <option value="Casado/a">
+                                <option value="Viudo/a">
+                            </datalist>
+                        </input><br/><br/>    
                     <!-- <fieldset> !-->
-                        <legend> Gender</legend>
-                        <input type="radio" name="genero" value="Hombre" /> Male
-                        <input type="radio" name="genero" value="Mujer" /> Female
-                        <input type="radio" name="genero" value="Tanque" /> War Tank <br/>
-                        <!-- Esto es un boton donde elegimos el valor (hombre - mujer) !-->
+                    Gender:
+                    <input type="radio" name="genero" value="Hombre" /> Male
+                    <input type="radio" name="genero" value="Mujer" /> Female
+                    <input type="radio" name="genero" value="Tanque" /> War Tank <br/><br/>
+                    <!-- Esto es un boton donde elegimos el valor (hombre - mujer) !-->
                     <!--</fieldset> !-->
-                    Age: <input type="number" name="edad" placeholder="20" value="20" min="10" max="99"/>
+                    Age: <input type="number" name="edad" placeholder="20" min="10" max="99"/><br/><br/>
                     <!--Address <textarea name="direccion" rows="5" cols="20">!-->
+                    Numero de hijos: 
+                    <input type="radio" name="NumHijos" value="0" /> 0
+                    <input type="radio" name="NumHijos" value="1" /> 1
+                    <input type="radio" name="NumHijos" value="2" /> 2
+                    <input type="radio" name="NumHijos" value="3" /> 3 <br/><br/>
+
+                    Gustos:
+                    <input type="checkbox" name="Gustos" value="Informatica" /> Informatica
+                    <input type="checkbox" name="Gustos" value="Buceo" /> Buceo
+                    <input type="checkbox" name="Gustos" value="Magia" /> Magia
+                    <input type="checkbox" name="Gustos" value="Jazz" /> Jazz <br/><br/>
+
+                    <input type="submit" value="Enviar"/>
+                    <input type="reset" value="Reset"/>
+
                 </form>
                 </tr></td>
             </table>
         </body>
-</html>
+</html
