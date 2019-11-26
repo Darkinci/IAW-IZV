@@ -13,31 +13,31 @@
                     Estado Civil:
                         <input list="estadocivil" name="estadocivil" placeholder="Elige uno de la lista">
                             <datalist id="estadocivil">
-                                <option value="Soltero/a">
-                                <option value="Casado/a">
-                                <option value="Viudo/a">
+                                <option value="Soltero/a"> Soltero/a </option>
+                                <option value="Casado/a"> Casado/a </option>
+                                <option value="Viudo/a"> Viudo/a </option>
                             </datalist>
                         </input><br/><br/>    
                     <!-- <fieldset> !-->
                     Gender:
-                    <input type="radio" name="genero" value="Hombre" /> Male
-                    <input type="radio" name="genero" value="Mujer" /> Female
-                    <input type="radio" name="genero" value="Tanque" /> War Tank <br/><br/>
+                    <input type="radio" name="genero" value="Hombre" /> <label>Male </label>
+                    <input type="radio" name="genero" value="Mujer" /> <label>FeMale </label>
+                    <input type="radio" name="genero" value="Tanque" /> <label>War tank </label><br/><br/>
                     <!-- Esto es un boton donde elegimos el valor (hombre - mujer) !-->
                     <!--</fieldset> !-->
                     Age: <input type="number" name="edad" placeholder="20" min="10" max="99"/><br/><br/>
                     <!--Address <textarea name="direccion" rows="5" cols="20">!-->
                     Numero de hijos: 
-                    <input type="radio" name="NumHijos" value="0" /> 0
-                    <input type="radio" name="NumHijos" value="1" /> 1
-                    <input type="radio" name="NumHijos" value="2" /> 2
-                    <input type="radio" name="NumHijos" value="3" /> 3 <br/><br/>
+                    <input type="radio" name="NumHijos" value="0" /> <label> 0 </label>
+                    <input type="radio" name="NumHijos" value="1" /> <label> 1 </label>
+                    <input type="radio" name="NumHijos" value="2" /> <label> 2 </label>
+                    <input type="radio" name="NumHijos" value="3" /> <label> 3 </label> <br/><br/>
 
                     Gustos:
-                    <input type="checkbox" name="Gustos" value="Informatica" /> Informatica
-                    <input type="checkbox" name="Gustos" value="Buceo" /> Buceo
-                    <input type="checkbox" name="Gustos" value="Magia" /> Magia
-                    <input type="checkbox" name="Gustos" value="Jazz" /> Jazz <br/><br/>
+                    <input type="checkbox" name="Gustos[]" value="Informatica" /> <label> Informatica </label>
+                    <input type="checkbox" name="Gustos[]" value="Buceo" /> <label> Buceo </label>
+                    <input type="checkbox" name="Gustos[]" value="Magia" /> <label> Magia </label>
+                    <input type="checkbox" name="Gustos[]" value="Jazz" /> <label> Jazz </label> <br/><br/>
 
                     <input type="submit" value="Enviar"/>
                     <input type="reset" value="Reset"/>

@@ -15,23 +15,20 @@
         echo $_POST['nombre']; echo "<br/><br/>";
         echo $_POST['apellido']; echo "<br/><br/>";
         echo $_POST['email']; echo "<br/><br/>";
-        $estadocivil = $_POST['estadocivil'];
+
+        echo $_POST['estadocivil']; echo "<br/><br/>";
+        /*$estadocivil = $_POST['estadocivil'];
         foreach ($estadocivil as $indice => $valor){
             echo "$indice: $valor <br/>";
-        }
+        }*/
         echo $_POST['genero']; echo "<br/><br/>";
         echo $_POST['edad']; echo "<br/><br/>";
-        $NumHijos =$_POST['NumHijos'];
-        foreach ($NumHijos as $indice => $valor) {
-            echo "$indice: $valor <br/>";
-        }
-        $gustos = $_POST['gustos'];
+        echo $_POST['NumHijos']; echo "<br/><br/>";
+        
+        $gustos = $_POST['Gustos'];
         foreach ($gustos as $indice => $valor) {
-            echo "$indice: $valor <br/>";
+            echo "$valor <br/>";
         }
-
-
-
     ?>
 </body>
 </html>
