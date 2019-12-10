@@ -6,8 +6,9 @@
             <title> Hombre Success</title>
         </head>
         <?php $hombre = $_SESSION["nombre"]; ?>
-        <body style="background-color:lightseagreen;">
-            <table border="1px" align="center" cellpadding="15">
+        <body style="background-color:lightblue;">
+        <h1 style="font-color:black;font-size:50px;text-align:center; ;font-family:Trattatello,Fantasy">Bienvenido a Sex Shop Jorge</h1>
+            <table border="2px" align="center" cellpadding="15">
                 <?php
                     echo "<tr><th><h2>Bienvenido $hombre</h2></th></tr>";
                 ?>
