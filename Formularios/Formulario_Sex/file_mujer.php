@@ -12,7 +12,17 @@
                 <?php
                     echo "<tr><th><h2>Bienvenida $mujer</h2></th></tr>";
                 ?>
-                <tr><th></th></tr>
+                <tr><th>
+                <form action="preciosfinmujer.php" method="post">
+                Elige tu satisfyer 
+                    <input type="checkbox" name="Satisfyer[]" value="3.99" /> <label> opcion A </label>
+                    <input type="checkbox" name="Satisfyer[]" value="4.99" /> <label> opcion B </label>
+                    <input type="checkbox" name="Satisfyer[]" value="17.99" /> <label> opcion C </label>
+                    <input type="checkbox" name="Satisfyer[]" value="14.67" /> <label> opcion D </label> <br/><br/>
+
+                Elige tu
+                </th></tr>
+
                 <tr><th><a href="index.php">Volver al inicio </a></th></tr>
             </table>
         </body>

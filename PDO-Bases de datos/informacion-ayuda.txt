@@ -1,0 +1,50 @@
+1. accedemos a la base de datos mediante -> localhost/phpmyadmin/
+2. creamos una base de datos nueva -> Nueva (previamente pulsamos en boton casita)
+3. Nombramos la base de datos "prueba"  + "ut8-spanish"
+4. Pulsamo en Exportar
+5. Pulsamos en personalizado, elegimos Prueba
+6. En "opciones de creacion de objetos" elegiremos la opcion de "agregar sentencia drop if exist"
+    6.1 No la elegiremos, pero que sepamos que esta
+7. En la opcion de "Opciones de creacion de datos" IMPORTANTE la opcion de "incluir nombres de columna en toda la sentencia"
+    SI la seleccionamos, estaremos OBLIGADOS a poner el nombre de la tupla antes de meter los campos
+    7.1 "incluir multiples filas en cada sentencia" podemos poner varios (SIN PONER EL NOMBRE DE LOS CAMPOS) valores de tupla
+    7.2 Tenemos tmb la opcion de ambos o de ninguno.
+    IMPORTANTE -> por comodidad y continuidad, elegiremos la "Las 2 anteriores"
+8. El nombre que le da a la exportancion, sera SIempre -> 127_0_0_1.sql
+
+IMPORTACION
+
+1. Para importar, seleccionamos la carpeta y poco mas
+
+CREACION DE TUPLA CIUDADES EN "Prueba"
+
+1. Creamos la tabla "ciudades" con columnas "2"
+2. Con los siguientes campos
+    2.1 Idciudad - Tinyint - Nulo Indice (Primary)
+    2.2 Nombre - Varchar - 30 - 
+3- Añadimos valores, pulsamos en ciudades > Insertar 
+    3.1 Añadimos Granada - Almeria - Cordoba - Malaga (con sus respectivos id)
+
+*- Si le damos a "Previsualizar SQL" podremos ver la sentencia SQL que nos vendra bien para copiar/pegar en phpmyadmin
+
+CONECTAR CON LA BASE DE DATOS 
+
+1. Creamos carpeta ejercicios
+2. Para conectar/crear con la base de datos
+
+    $con = new PDO(
+        $host="localhost",
+        $usuario="root",
+        $clave="",
+        array(
+            PDO::ATTR_PERSISTENT => true,
+            PDO::MYSQL_ATTR_INIT_COMMAND => 'set names utf8'
+        )
+    );
+
+3. Eso seria lo que habria que poner en la teoria, pero debemos tener en cuenta los errores
+
+4. Continuamos enb la carpeta 
+
+
+
