@@ -2,7 +2,7 @@
     //Datos de conexion
 
     $serv="localhost";
-    $base="monumentos";
+    $base="turismo";
     $usuario="root";
     $key="";
 
