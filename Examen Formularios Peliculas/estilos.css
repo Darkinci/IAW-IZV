@@ -1,0 +1,76 @@
+body{
+    background-color: #c2fcbd;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    background-color:#82c879;
+    color: blue;
+    font-weight: bold;
+}
+table{
+    box-align: center;
+}
+form{
+    border: 10px solid purple;
+    text-align: left;
+    color: #e8aa1c;
+    font-weight: bold;
+    border-style: dotted;
+    margin-left: 42%;
+    margin-right: 40%;
+}
+input{
+    margin-left: 15px;
+}
+input.arriba{
+    margin-left: 15px;
+    margin-top:10px;
+}
+input.botones{
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+p.final{
+    background-color: #b0e438;
+    text-align: center;
+    font-size: medium;
+    border-collapse: collapse;
+    color:#e438dc;
+    font-weight: bold;
+}
+h1.fallo{
+    background-color: yellow;
+    color: red;
+    text-align: center;
+}
+body.fallo{
+    background-color: #1ce8e5;
+}
+h1.victoria{
+    background-color: #ec8bfa;
+    color:#34f704;
+    text-align: center;
+}
+h1.final{
+    text-align: center;
+    background-color:#82c879;
+    color: blue;
+    font-weight: bold;
+}
+h2.final{
+    background-color: orange;
+    color: blue;
+    text-decoration-line: underline;
+    text-align: center;
+}
+h2.menor{
+    background-color: orange;
+    color: blue;
+    text-decoration-line: underline;
+    text-align: center;
+    font-size: small;
+    margin-top: 0;
+}
