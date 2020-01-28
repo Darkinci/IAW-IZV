@@ -1,0 +1,5 @@
+Crear bd Empleado
+Alta Empleado ()
+Baja Empleado (borrar de bd)
+Mostrar Empleado (tostring nombre)
+Actualizar Empleado (sesiones)

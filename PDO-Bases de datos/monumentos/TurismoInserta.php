@@ -15,14 +15,14 @@
     <br />
 
     <div>
-	<form action="muestramonumentos.php" method="post">
-		<input class="arriba" type='checkbox' name="ciudad" value="Granada"> Granada <br /><br />
-		<input type='checkbox' name="ciudad" value="Almeria"> Almeria <br /><br />
-		<input type='checkbox' name="ciudad" value="Sevilla"> Sevilla <br /><br />
-		<input type='checkbox' name="ciudad" value="Cordoba"> Cordoba <br /><br />
-		<input type='checkbox' name="ciudad" value="Huelva"> Huelva <br /><br />
-		<input type='checkbox' name="ciudad" value="Malaga"> Malaga <br /><br />
-		<input type='checkbox' name="ciudad" value="Cadiz"> Cadiz <br /><br />
+	<form action="TurismoVerCiudad.php" method="post">
+		<input class="arriba" type='checkbox' name="aniadeciudad" value="Granada"> Granada <br /><br />
+		<input type='checkbox' name="aniadeciudad" value="Almeria"> Almeria <br /><br />
+		<input type='checkbox' name="aniadeciudad" value="Sevilla"> Sevilla <br /><br />
+		<input type='checkbox' name="aniadeciudad" value="Cordoba"> Cordoba <br /><br />
+		<input type='checkbox' name="aniadeciudad" value="Huelva"> Huelva <br /><br />
+		<input type='checkbox' name="aniadeciudad" value="Malaga"> Malaga <br /><br />
+		<input type='checkbox' name="aniadeciudad" value="Cadiz"> Cadiz <br /><br />
 		<input class="botones" type='submit' />
 		<a href="TurismoPaginaPrincipal.html">Volver al Inicio </a>
 	</form>
